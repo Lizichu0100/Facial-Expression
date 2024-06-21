@@ -52,7 +52,7 @@ Feel free to modify and extend the notebook to explore further aspects of the da
 ![](./materials/CEV.png)
 
 
-   #### **To determine the optimal number of principal components, I follow these step:
+   ### **To determine the optimal number of principal components, I follow these step:
 
    
    1. **Perform PCA**: Fit a PCA model to the dataset and capture the explained variance for each principal component.
@@ -67,7 +67,7 @@ Feel free to modify and extend the notebook to explore further aspects of the da
 
    6. **Select Number of Components**: Choose the number of components that capture a significant portion of the total variance (typically around 90-95%).
 
-   #### **Explanation of the Selection Process for the Optimal Number of Principal Components**
+   ### **Explanation of the Selection Process for the Optimal Number of Principal Components**
    
 
    1. **Explained Variance Ratio**: Measures the amount of variance each principal component captures from the original data.
@@ -79,6 +79,6 @@ Feel free to modify and extend the notebook to explore further aspects of the da
    4. **Threshold:** Choose the number of principal components that capture a significant portion of the total variance, typically around 90-95%. This threshold ensures that you retain most of the dataset's information while reducing dimensionality.
 
        
-   #### **Base on the plot:**
+   ### **Base on the plot:**
    
    The cumulative explained variance plot shows that the first 25-50 principal components capture the most significant variance, with the curve flattening beyond this point. Selecting 100 components, which explains about 90% of the total variance, strikes an optimal balance. This choice retains most essential information while efficiently reducing dimensionality, as additional components contribute only marginally to the variance.
