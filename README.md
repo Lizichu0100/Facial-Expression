@@ -58,6 +58,6 @@ Feel free to modify and extend the notebook to explore further aspects of the da
 
    2. Cumulative Explained Variance: The cumulative sum of the explained variance ratios, showing the total variance captured as more components are added.
        
-   ###**Base on the plot:**
+   #### **Base on the plot:**
    
    The cumulative explained variance plot shows that the first 25-50 principal components capture the most significant variance, with the curve flattening beyond this point. Selecting 100 components, which explains about 90% of the total variance, strikes an optimal balance. This choice retains most essential information while efficiently reducing dimensionality, as additional components contribute only marginally to the variance.
