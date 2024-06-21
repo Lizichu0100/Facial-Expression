@@ -43,18 +43,20 @@ This project is designed to be completed in the following steps:
 
 Feel free to modify and extend the notebook to explore further aspects of the data and experiment with different algorithms. Good luck.
 
-###**Question 1:** Can you visualize the data projected onto two principal components? (2 points)
+### **Question 1:** Can you visualize the data projected onto two principal components? (2 points)
 ![](./materials/pca_sample.png)
 
 
-###**Question 2:** How to determine the optimal number of principal components using pca.explained_variance_? Explain your selection process. (2 points)
+### **Question 2:** How to determine the optimal number of principal components using pca.explained_variance_? Explain your selection process. (2 points)
 
 ![](./materials/CEV.png)
 
 
-   ####**Explanation of the Selection Process for the Optimal Number of Principal Components**
-       1. Explained Variance Ratio: Measures the amount of variance each principal component captures from the original data.
-       2. Cumulative Explained Variance: The cumulative sum of the explained variance ratios, showing the total variance captured as more components are added.
+   #### **Explanation of the Selection Process for the Optimal Number of Principal Components**
+   
+   1. Explained Variance Ratio: Measures the amount of variance each principal component captures from the original data.
+
+   2. Cumulative Explained Variance: The cumulative sum of the explained variance ratios, showing the total variance captured as more components are added.
        
    ###**Base on the plot:**
    
