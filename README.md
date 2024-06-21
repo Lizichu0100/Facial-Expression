@@ -52,11 +52,32 @@ Feel free to modify and extend the notebook to explore further aspects of the da
 ![](./materials/CEV.png)
 
 
+   #### **To determine the optimal number of principal components, I follow these step:
+
+   
+   1. **Perform PCA**: Fit a PCA model to the dataset and capture the explained variance for each principal component.
+      
+   2. **Calculate Explained Variance Ratios**: The `explained_variance_ratio_` attribute of the PCA object provides the proportion of the dataset's variance that each principal component explains.
+      
+   3. **Calculate Cumulative Explained Variance**: The cumulative sum of the explained variance ratios helps to understand the total variance captured as more principal components are added.
+   
+   4. **Plot Cumulative Explained Variance**: Plotting the cumulative explained variance against the number of principal components allows for visual identification of the "elbow point."
+   
+   5. **Identify the Elbow Point**: The optimal number of principal components is often at the "elbow point" in the plot, where the explained variance starts to level off. Adding more components beyond this point results in only a small increase in the explained variance.
+
+   6. **Select Number of Components**: Choose the number of components that capture a significant portion of the total variance (typically around 90-95%).
+
    #### **Explanation of the Selection Process for the Optimal Number of Principal Components**
    
-   1. Explained Variance Ratio: Measures the amount of variance each principal component captures from the original data.
 
-   2. Cumulative Explained Variance: The cumulative sum of the explained variance ratios, showing the total variance captured as more components are added.
+   1. **Explained Variance Ratio**: Measures the amount of variance each principal component captures from the original data.
+
+   2. **Cumulative Explained Variance**: The cumulative sum of the explained variance ratios, showing the total variance captured as more components are added.
+
+   3. **Elbow Point:** Look at the plot of cumulative explained variance versus the number of components. The "elbow point" is where the curve starts to flatten out. This indicates diminishing returns in terms of explained variance as more components are added.
+
+   4. **Threshold:** Choose the number of principal components that capture a significant portion of the total variance, typically around 90-95%. This threshold ensures that you retain most of the dataset's information while reducing dimensionality.
+
        
    #### **Base on the plot:**
    
