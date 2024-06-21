@@ -54,7 +54,7 @@ Feel free to modify and extend the notebook to explore further aspects of the da
 ![](./materials/CEV.png)
 
 
-   ### ** To determine the optimal number of principal components, I follow these step:
+   ### **To determine the optimal number of principal components, I follow these step:**
 
    
    1. **Perform PCA**: Fit a PCA model to the dataset and capture the explained variance for each principal component.
