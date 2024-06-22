@@ -51,12 +51,8 @@ Feel free to modify and extend the notebook to explore further aspects of the da
 
 ### **Question 2:** How to determine the optimal number of principal components using pca.explained_variance_? Explain your selection process. (2 points)
 
-![](./materials/CEV.png)
-
-
    ### **To determine the optimal number of principal components, I follow these step:**
 
-   
    1. **Perform PCA**: Fit a PCA model to the dataset and capture the explained variance for each principal component.
       
    2. **Calculate Explained Variance Ratios**: The `explained_variance_ratio_` attribute of the PCA object provides the proportion of the dataset's variance that each principal component explains.
@@ -68,6 +64,8 @@ Feel free to modify and extend the notebook to explore further aspects of the da
    5. **Identify the Elbow Point**: The optimal number of principal components is often at the "elbow point" in the plot, where the explained variance starts to level off. Adding more components beyond this point results in only a small increase in the explained variance.
 
    6. **Select Number of Components**: Choose the number of components that capture a significant portion of the total variance (typically around 90-95%).
+
+![](./materials/CEV.png)
 
    ### **Explanation of the Selection Process for the Optimal Number of Principal Components**
    
