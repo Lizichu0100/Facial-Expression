@@ -51,7 +51,7 @@ Because the original size of image is (48, 48), which is (2304, ) if flatten can
 
         ![img](./materials/conv_kernel.png)
     - **Cell Division**:  Divide the image into small connected regions called cells. A common choice for the cell size is $8 \times 8$ pixels. So there will be $6 \times 6 = 36$ cells ($48 / 8 = 6$)
-        ![img](./materials/cell_divison.png)
+        ![img](./materials/cell_division.png)
     - **Orientation Binning**: Typically, the gradient directions are binned into 9 bins, which are $[0, 20], ... [160, 180]$. In each cell of size $8 \times 8$ above, we map the Gradient Magnitude into those bins and receive a 1-d array of size 9 
 
         ![img](./materials/mapping_gradient_to_hist.png)
@@ -98,15 +98,13 @@ Because the original size of image is (48, 48), which is (2304, ) if flatten can
 </figure>
 
 
-- We choose ```F1 Score``` as main metric since this dataset has imbalance among its classes which makes ```Precision``` and ```Recall``` not so reliable, as we can see the high in ```Precision``` is due to class 1 (```disgust```) - the imbalanced class 
+- We choose ```F1-Score``` as main metric since this dataset has imbalance among its classes which makes ```Precision``` and ```Recall``` not so reliable, as we can see the high in ```Precision``` is due to class 1 (```disgust```) - the imbalanced class 
 - We easily see that ```SVC``` is the most competitive among 4 models, whose ```F1-Score``` (overall for 7 classes) is highest among all. We can increase the performance of other models by tuning but need to take into consideration of more  hyperparamters than that of ```SVC```
 
-- The most accurate class predicted by models is class 1 - the imbalanced class:
-    - We tried oversampling with SMOTE (Synthetic Minority oversampling) technique but the result almost  same as before, not to mention worse
-    - High ```Precison``` and low ```Recall```: This  suggests that while the model is very accurate when it predicts this class (i.e., few false positives), it is missing many instances of this class (i.e., many false negatives)
+- The most accurate and most erroroneous class predicted by models: 
+    - In term of ```F1-score``` and ```Recall```, class 3 (```Happy```) has highest score, this may result from many factors, one of them is that class 3 is the class having highest number of samples so  models could learn many from it.  We couldn't identify class with lowest in these scores. 
+    - In term of ```Precison```, class 1 (```Disgust```) has highest score most of the time (apart from MLP Classifier's result), but ```Recall``` of it is significantly low. This  suggests that while the model is very accurate when it predicts this class (i.e., few false positives), it is missing many instances of this class (i.e., many false negatives). We couldn't identify class with lowest score.
 
-    ![img](./materials/svc_original.png)
-- In contrast, class 4 (```Sad```) mostly has the lowest ```Precision``` (above is the result from ```SVC```, for demonstration) 
 
 ## 4.Reference
 
