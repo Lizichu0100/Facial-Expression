@@ -78,7 +78,7 @@ Feel free to modify and extend the notebook to explore further aspects of the da
 
    4. **Threshold:** Choose the number of principal components that capture a significant portion of the total variance, typically around 90-95%. This threshold ensures that you retain most of the dataset's information while reducing dimensionality.
        
-   ### **Base on the above plot:**
+   ### **Based on the above plot:**
    
    The cumulative explained variance plot shows that the first 25-50 principal components capture the most significant variance, with the curve flattening beyond this point. Selecting 100 components, which explains about 90% of the total variance, strikes an optimal balance. This choice retains most essential information while efficiently reducing dimensionality, as additional components contribute only marginally to the variance.
 
