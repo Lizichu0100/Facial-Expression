@@ -68,6 +68,7 @@ Because the original size of image is (48, 48), which is (2304, ) if flatten can
 
 - We have experimentd MLP Classifier along with 3 Machine Learining Algorithm: Random Forest, XGBoost and Support Vector Classifier in both formats: Original data (feature processed by HOG) and PCA data
 - We compared the performance on 2 formats and see that they are approximately same as each other, here we use ```SVC``` result for demonstration
+- After performing tuning in all 4 models, we seen an increased in all models accuracy (ảound 0.05 to 0.1 score) with SVC still the best perform among these 4 models
 
 <figure>
   <img src="./materials/svc_original.png" alt="Caption text">
@@ -78,8 +79,6 @@ Because the original size of image is (48, 48), which is (2304, ) if flatten can
   <img src="./materials/svc_on_pca.png" alt="Caption text">
   <figcaption>SVC on PCA data</figcaption>
 </figure>
-
-**Perform hyperparameter tuning using GridSearchCV for each classification method. (1 point)**
 
 ## 3. Evaluation Classification Performance
 **Compare the performance of the different classification models using various metrics: accuracy, precision, recall, and F1-score. Based on the evaluation metrics, explain which model performs best and why. Identify the emotion category where the model makes the most accurate and most errors. (1 point)**
