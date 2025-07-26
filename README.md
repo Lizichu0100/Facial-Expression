@@ -1,7 +1,7 @@
-# Mini-Project for Fundamentals of Machine Learning Course
+# Facial Expression Recognition using ML
 ![background](./materials/electronics-12-02707-g001.png)
 
-This repository contains the code and data for a mini-project on facial expression recognition using machine learning algorithms.
+Mini-project developed for the Fundamentals of Machine Learning course, focusing on facial expression recognition using machine learning algorithms.
 
 ## 📑 Project Policy
 - Team consist of 3-4 students.
