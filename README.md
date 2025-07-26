@@ -4,7 +4,7 @@
 Mini-project developed for the Fundamentals of Machine Learning course, focusing on facial expression recognition using machine learning algorithms.
 
 ## 📑 Project Policy
-- Team consist of 3-4 students.
+- Team consist of 3 students.
 
     |No.| Student Name    | Student ID |
     | --------| -------- | ------- |
