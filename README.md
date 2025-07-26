@@ -1,4 +1,4 @@
-# Facial Expression Recognition using ML
+# Facial Expression Recognition using Machine Learning
 ![background](./materials/electronics-12-02707-g001.png)
 
 Mini-project developed for the Fundamentals of Machine Learning course, focusing on facial expression recognition using machine learning algorithms.
