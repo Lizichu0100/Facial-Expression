@@ -1,5 +1,5 @@
 # Mini-Project for Fundamentals of Machine Learning Course
-![background](./materials/download.jfif)
+![background](./materials/electronics-12-02707-g001.png)
 
 This repository contains the code and data for a mini-project on facial expression recognition using machine learning algorithms.
 
